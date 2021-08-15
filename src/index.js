@@ -1,9 +1,11 @@
-import { BinanceAPI } from "./services/binance-api.js";
-import { config } from "../config.js";
 import cron from "node-schedule";
 import cronstrue from "cronstrue";
-import { SendGridNotification } from "./services/sendgrid-notification.js";
 import colors from "colors";
+
+import { BinanceAPI } from "./services/binance-api.js";
+import { config } from "../config.js";
+import { SendGridNotification } from "./services/sendgrid-notification.js";
+
 
 const notification = new SendGridNotification(config.sendgrid_secret);
 
@@ -56,4 +58,6 @@ async function runBot() {
   }
 }
 
-await runBot();
+(async () => {
+  await runBot();
+})
