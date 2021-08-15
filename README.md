@@ -1,3 +1,7 @@
+***This project is a fork of [binance-dca-bot](https://github.com/lukeliasi/binance-dca-bot)***
+
+---
+
 ![Binance DCA Bot Banner](/banner.jpg)
 # Binance DCA (Dollar-Cost-Averaging) Bot
 
