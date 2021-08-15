@@ -1,4 +1,5 @@
 const config = {
+  sendgrid_secret: "",
   binance_key: "your-binance-api-key",
   binance_secret: "your-binance-api-secret",
   buy: [
